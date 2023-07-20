@@ -139,3 +139,10 @@ dmypy.json
 cython_debug/
 
 !/.coverage
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/simple-python-service.iml
+/.idea/vcs.xml
