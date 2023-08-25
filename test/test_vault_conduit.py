@@ -14,4 +14,3 @@ class VaultConduitTest(unittest.TestCase):
         vault_get = self.vault_conn.get_secret()
         assert isinstance(vault_get, dict)
         self.assertEqual(vault_get, expected)
-

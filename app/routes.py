@@ -11,4 +11,5 @@ def health_check():
 @vault_conduit_bp.route('/vault_check')
 def vault():
     vault_check = VaultConduit()
-    return vault_check
+    secret_read = vault_check.get_secret()
+    return secret_read
