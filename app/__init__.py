@@ -1,6 +1,6 @@
 from flask import Flask
 from .healtcheck import healthcheck_bp
-from vault.vault_conduit import vault_conduit_bp
+from VaultConduit import vault_conduit_bp
 
 
 def create_app():
