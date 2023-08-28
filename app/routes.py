@@ -1,5 +1,5 @@
 from .healtcheck import healthcheck_bp
-from VaultConduit import VaultConduit, vault_conduit_bp
+from app.VaultConduit import VaultConduit, vault_conduit_bp
 
 
 @healthcheck_bp.route('/health-check')
