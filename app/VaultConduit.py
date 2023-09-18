@@ -55,10 +55,10 @@ class VaultConduit:
         kv = f"secrets"
         path = "devops-services-dev-main/devops/tooling/services/jenkins/ssh-key"
 
-        read_secret_result = self.client.secrets.kv.v1.read_secret(
-            path='devops/global/natgw_staticip/simple-python-service-splitview',
-            mount_point=''
-        )
+        # read_secret_result = self.client.secrets.kv.v1.read_secret(
+        #     path='devops/global/natgw_staticip/simple-python-service-splitview',
+        #     mount_point=''
+        # )
         
         url = f"{self.VAULT_SERVICE}/get_path/{kv}/{path}"
 
