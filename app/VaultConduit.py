@@ -35,16 +35,13 @@ class VaultConduit:
         )
         return read_secret_result['data']
     
-    def get_secret(self):
-        # The following path corresponds, when combined with the mount point, to a full Vault API route of
-        # "v1/secretz/hvac"
+    def get_secret_from_sidecard(self):
+
         kv = f"secrets"
         path = "devops-services-dev-main/devops/tooling/services/jenkins/ssh-key"
 
-
         url = f"{self.VAULT_SERVICE}/get_path/{kv}/{path}"
 
-        # Perform the GET request
         response = requests.get(url)
 
         # Check if the request was successful

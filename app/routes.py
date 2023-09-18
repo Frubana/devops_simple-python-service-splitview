@@ -12,3 +12,9 @@ def vault():
     vault_check = VaultConduit()
     secret_read = vault_check.get_secret()
     return secret_read
+
+@vault_conduit_bp.route('/vault_check_sidecard')
+def vault():
+    vault_check = VaultConduit()
+    secret_read = vault_check.get_secret_from_sidecard()
+    return secret_read
