@@ -7,7 +7,6 @@ def create_app():
     app = Flask(__name__)
     app.register_blueprint(healthcheck_bp)
     app.register_blueprint(vault_conduit_bp)
-    #app.register_blueprint(vault_conduit_bp)
     
     @app.route('/hello', methods=['GET'])
     def hello():
