@@ -1,6 +1,6 @@
 import logging
 
-#import hvac
+import hvac
 from flask import Blueprint
 import os
 import requests
