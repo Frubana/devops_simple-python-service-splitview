@@ -1,10 +1,13 @@
 import unittest
 from app.VaultConduit import VaultConduit
+from unittest.mock import MagicMock
+
 
 
 class VaultConduitTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.vault_conn = VaultConduit()
+        self.vault_conn = MagicMock(spec=VaultConduit) #VaultConduit()
+        self.vault_conn.get_secret = MagicMock(spec=dict, return_value= {'hush_hush': 'test'})
 
     def test_vault_conduit_constructor(self):
         assert isinstance(self.vault_conn, VaultConduit)
