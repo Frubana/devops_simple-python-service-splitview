@@ -2,7 +2,7 @@
 sidecars:
   - name: "vault_sidecar"
     essential: true
-    image: "831944504425.dkr.ecr.us-west-2.amazonaws.com/vault-sidecar:v1.0.12"
+    image: "831944504425.dkr.ecr.us-west-2.amazonaws.com/vault-sidecar:v1.0.13"
     portMappings:
       - containerPort: "4900"
         hostPort: "4900"
