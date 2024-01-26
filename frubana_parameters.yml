@@ -1,6 +1,6 @@
 develop:
   ENV: develop
-  FOOD: tito
+  FOOD tito
 production:
   ENV: develop
   FOOD: tito
