@@ -1,0 +1,9 @@
+develop:
+  ENV: develop
+  FOOD: tito
+production:
+  ENV: develop
+  FOOD: tito
+quality:
+  ENV: develop
+  FOOD: tito
