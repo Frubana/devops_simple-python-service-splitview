@@ -4,6 +4,6 @@ develop:
 production:
   ENV: develop
   FOOD: tito
-qualitasdy:
+quality:
   ENV: develop
   FOOD: tito
