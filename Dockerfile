@@ -12,7 +12,7 @@ COPY --from=build-stage /project /project
 ARG SONARQUBE_TOKEN
 ARG SONARQUBE_URL
 ARG SONARQUBE_ENV
-RUN #!/busybox/sh ; if [ $SONARQUBE_ENV = "prod" ] ; then sonar-scanner -Dsonar.host.url=$SONARQUBE_URL -Dsonar.login=$SONARQUBE_TOKEN ; else echo "$SONARQUBE_ENV no envia a sonar"; fi
+#RUN #!/busybox/sh ; if [ $SONARQUBE_ENV = "prod" ] ; then sonar-scanner -Dsonar.host.url=$SONARQUBE_URL -Dsonar.login=$SONARQUBE_TOKEN ; else echo "$SONARQUBE_ENV no envia a sonar"; fi
 
 FROM build-stage
 WORKDIR /project
