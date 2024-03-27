@@ -10,4 +10,4 @@ defaults['CPU'] = "512"
 defaults['MEMORY'] = "1024"
 
 @Library('pipeline-libs@msDeployPipelineMultiBranch')_
-msDeploySplitviewPipeline(Config: defaults)
+msDeploySplitviewPipelineMultiBranch(Config: defaults)
