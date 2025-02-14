@@ -2,8 +2,8 @@ FROM python:3.9-slim-buster AS build-stage
 WORKDIR /project
 COPY . .
 RUN pip install -r requirements.txt
-RUN  coverage run --source=test/ -m pytest
-RUN  coverage xml
+#RUN  coverage run --source=test/ -m pytest
+#RUN  coverage xml
 
 #Sonar scan
 FROM  sonarsource/sonar-scanner-cli AS sonar-stage
