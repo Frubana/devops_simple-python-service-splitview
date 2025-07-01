@@ -9,5 +9,5 @@ defaults['DESIRED_TASK_COUNT'] = "1"
 defaults['CPU'] = "512"
 defaults['MEMORY'] = "1024"
 
-@Library('pipeline-libs@develop')_
+@Library('pipeline-libs@pulumi')_
 msDeployPulumi(Config: defaults)
