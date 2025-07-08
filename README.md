@@ -1,3 +1,1 @@
-# natgw-staticip-test
-
-Microservicio de prueba para POC de salida por IP estatica.
+Microservicio de ejemplo, que levanta una aplicacion python que escucha por el puerto 8080
